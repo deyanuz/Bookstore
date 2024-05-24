@@ -40,4 +40,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.github.bumptech.glide:glide:4.13.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
+
+    // Firebase Authentication
+    implementation("com.google.firebase:firebase-auth:21.0.1")
+
+    // Firebase Storage
+    implementation("com.google.firebase:firebase-storage:20.0.1")
+
+    // Firebase Realtime Database
+    implementation("com.google.firebase:firebase-database:20.0.3")
 }
