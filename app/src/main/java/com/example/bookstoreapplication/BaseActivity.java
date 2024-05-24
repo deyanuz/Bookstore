@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+
 public class BaseActivity extends AppCompatActivity {
 
     boolean nightMode;
