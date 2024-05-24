@@ -10,8 +10,6 @@ import android.widget.ToggleButton;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import com.google.firebase.auth.FirebaseAuth;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,9 +30,8 @@ public class CategoryActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
-        FirebaseAuth auth = FirebaseAuth.getInstance();
         TextView welcome = findViewById(R.id.Welcome);
-        String msg = "Welcome, " + auth.getCurrentUser().getDisplayName() + "!";
+        String msg = "Welcome!";
         welcome.setText(msg);
 
         Button horrorButton = findViewById(R.id.Horror);

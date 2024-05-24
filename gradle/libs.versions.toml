@@ -1,6 +1,7 @@
 [versions]
 agp = "8.4.1"
 compiler = "4.13.0"
+espressoCoreVersion = "3.4.0"
 firebaseAuthVersion = "21.0.1"
 firebaseDatabase = "21.0.0"
 firebaseFirestore = "25.0.0"
@@ -18,6 +19,7 @@ firebaseAuth = "23.0.0"
 
 [libraries]
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
 firebase-auth-v2101 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
 firebase-database = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabase" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
