@@ -39,18 +39,20 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.analytics)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.github.bumptech.glide:glide:4.13.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
 
     // Firebase Authentication
-    implementation("com.google.firebase:firebase-auth:21.0.1")
-
+    implementation(libs.firebase.auth.v2101)
+    androidTestImplementation(libs.firebase.firestore)
+    androidTestImplementation(libs.firebase.auth)
     // Firebase Storage
-    implementation("com.google.firebase:firebase-storage:20.0.1")
+    implementation(libs.firebase.storage)
 
     // Firebase Realtime Database
-    implementation("com.google.firebase:firebase-database:20.0.3")
+    implementation(libs.firebase.database)
 }
