@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "837685190225",
+    "firebase_url": "https://newbookapp-14ac4-default-rtdb.firebaseio.com",
+    "project_id": "newbookapp-14ac4",
+    "storage_bucket": "newbookapp-14ac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837685190225:android:76ecfca8f089286e95e270",
+        "android_client_info": {
+          "package_name": "com.example.bookstoreapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCikzyQtgYmWVtFFuKKkpth4PUm-ehFaaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837685190225:android:97b40a114abb395995e270",
+        "android_client_info": {
+          "package_name": "com.example.colabtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCikzyQtgYmWVtFFuKKkpth4PUm-ehFaaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837685190225:android:542b4bae28182ddf95e270",
+        "android_client_info": {
+          "package_name": "com.example.mybookstoreapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCikzyQtgYmWVtFFuKKkpth4PUm-ehFaaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837685190225:android:e07184514feaf14195e270",
+        "android_client_info": {
+          "package_name": "com.example.mybookstoreapp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCikzyQtgYmWVtFFuKKkpth4PUm-ehFaaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
