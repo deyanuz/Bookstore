@@ -20,7 +20,9 @@ import java.util.HashMap;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     Context context;
     ArrayList<HashMap<String, Object>> items;
-
+    public MyAdapter() {
+        // Initialization code here
+    }
     public MyAdapter(Context context, ArrayList<HashMap<String, Object>> items) {
         this.context = context;
         this.items = items;
