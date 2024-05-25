@@ -13,12 +13,17 @@
         android:theme="@style/Theme.BookStoreApplication"
         tools:targetApi="31">
         <activity
+            android:name=".CheckoutDoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".BookDisplayActivity"
             android:exported="false" />
         <activity
             android:name=".BookDetailActivity"
             android:exported="false" />
-
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />
@@ -36,15 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".SignInActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
