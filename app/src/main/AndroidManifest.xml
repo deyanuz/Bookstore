@@ -19,9 +19,6 @@
             android:name=".CheckoutActivity"
             android:exported="false" />
         <activity
-            android:name=".MyAdapter"
-            android:exported="false" />
-        <activity
             android:name=".BookDisplayActivity"
             android:exported="false" />
         <activity
