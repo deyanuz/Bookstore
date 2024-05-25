@@ -85,7 +85,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     public int getItemCount() {
         return  items.size();   // list
     }
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         View v;
         ImageView imageView;
         TextView nameView,authorView,priceView,rateView;

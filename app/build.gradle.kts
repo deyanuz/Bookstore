@@ -36,11 +36,6 @@ android {
             resources.srcDir("src/androidTest/resources")
         }
     }
-
-    defaultConfig {
-        // Add test instrumentation runner
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
 }
 dependencies {
     implementation(libs.appcompat)
@@ -53,9 +48,9 @@ dependencies {
     annotationProcessor(libs.compiler)
 
     // Firebase Authentication
-    androidTestImplementation("com.google.firebase:firebase-auth:23.0.0")
     implementation("com.google.firebase:firebase-auth:23.0.0")
     testImplementation("com.google.firebase:firebase-auth:23.0.0")
+
     // Firebase Storage
     implementation(libs.firebase.storage)
 
@@ -65,13 +60,17 @@ dependencies {
     // Test Dependencies
     testImplementation(libs.junit)
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.5.21")
+    testImplementation("org.mockito:mockito-core:5.12.0")
+    testImplementation("org.mockito:mockito-inline:4.0.0")
+    testImplementation("org.robolectric:robolectric:4.9")
+    testImplementation("org.robolectric:shadows-framework:4.9")
+    testImplementation("androidx.test.ext:junit:1.1.5")
+    testImplementation("androidx.test:core:1.5.0")
 
     // Android Test Dependencies
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    androidTestImplementation(libs.firebase.auth)
     androidTestImplementation("androidx.test.ext:junit-ktx:1.1.5")
-    androidTestImplementation("org.mockito:mockito-core:5.12.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.test:rules:1.5.0")
     androidTestImplementation("androidx.test:runner:1.5.2")
