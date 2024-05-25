@@ -85,6 +85,7 @@ public class SignInActivity extends BaseActivity {
                 if (success) {
                     Toast.makeText(SignInActivity.this, "SignIn Successfully", Toast.LENGTH_SHORT).show();
                     startActivity(ActivityIntentFactory.createIntent(SignInActivity.this, CategoryActivity.class));
+                    finish();
                 } else {
                     Toast.makeText(SignInActivity.this, "SignIn Failed: " + message, Toast.LENGTH_SHORT).show();
                 }

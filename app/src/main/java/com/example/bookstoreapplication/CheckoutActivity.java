@@ -34,6 +34,9 @@ public class CheckoutActivity extends BaseActivity {
     private LinearLayout cardInfo;
     private Button submit;
     EditText ename,ephone,ecountry,estreet;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+    CollectionReference colRef = db.collection("Cart").document("Cart").collection(userId);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +51,7 @@ public class CheckoutActivity extends BaseActivity {
         ecountry=findViewById(R.id.editTextCountryCity);
         estreet=findViewById(R.id.editTextStreetBuilding);
 
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        CollectionReference colRef = db.collection("Cart").document("Cart").collection(userId);
+
         ArrayList<HashMap<String, Object>> items = new ArrayList<>();
         colRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
@@ -123,10 +124,25 @@ public class CheckoutActivity extends BaseActivity {
                             }
                         }
                     });
+                    clearCart();
                     Intent i = new Intent(CheckoutActivity.this, CheckoutDoneActivity.class);
                     startActivity(i);
                 }
 
+            }
+        });
+    }
+    private void clearCart() {
+        colRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (DocumentSnapshot doc : task.getResult().getDocuments()) {
+                        doc.getReference().delete();
+                    }
+                } else {
+                    Toast.makeText(CheckoutActivity.this, "Failed to clear the cart. Please try again.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
