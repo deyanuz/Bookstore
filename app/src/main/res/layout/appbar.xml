@@ -9,16 +9,21 @@
     android:paddingTop="13dp"
     android:paddingBottom="13dp">
 
-
     <TextView
         android:id="@+id/toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
         android:layout_marginLeft="16dp"
         android:layout_toEndOf="@id/left_icon"
+        android:fontFamily="@font/montserrat"
         android:text=""
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/history"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/left_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/history"
@@ -30,7 +35,6 @@
         android:src="@drawable/baseline_history_24"
         app:layout_constraintEnd_toStartOf="@+id/cart"
         tools:layout_editor_absoluteY="13dp" />
-
 
     <ImageView
         android:id="@+id/left_icon"
