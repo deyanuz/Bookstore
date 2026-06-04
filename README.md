@@ -14,7 +14,7 @@ This is a collaborative team project developed by:
 | # | Name | Roll |
 |---|------|------|
 | 1 | **Sumaiya Khan** | 2007031 |
-| 2 | **kawsar mahmud khan Zunayed ** | 2007046 |
+| 2 | **Md kawsar Mahmud Khan Zunayed** | 2007046 |
 | 3 | **Avishek Debnath** | 2007056 |
 
 ---
