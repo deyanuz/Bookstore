@@ -151,7 +151,3 @@ Bookstore-main/
 
 This project is open-source and distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
-
-⭐ **Star this repo if you found it helpful!** ⭐
-
-</div>
