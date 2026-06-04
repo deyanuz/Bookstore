@@ -75,7 +75,6 @@ Check out the live demonstration of the app in action!
 
 [🔗 Click here to watch the Demo Video on Google Drive](https://drive.google.com/file/d/1YNqau51bEXR_Bp5YqxZDzXmHq13JAiIz/view?usp=drive_link)
 
-> *(Replace this link with your actual Google Drive share link)*
 
 ---
 
